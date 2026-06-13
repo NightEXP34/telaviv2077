@@ -1,0 +1,19 @@
+BRANCH
+Jalur development bebas dari sebuah commit
+
+CHECKOUT = pindah ke branch/commit lainnya (belom belajar lebih jauh) 
+>brancing use for :
+-making snapshot without ruining the main branch (master branch)
+-to experiment on certain fiture
+-if its like for a collab and you need two person for one project to do the same thing
+>pull request part :
+-after making a new branch by clicking "main" then type a new branch name then you can make a new file on that new branch that
+after you finish with that branch you can pull request to the master (the guy who own the repo) and afterward you will get sent to 
+"pull request" and you can comment there, can also accept the pull request if your the master then comment & tell thank you as the tittle
+or just wanna change the repo normally just so you can see the progress something like "changes from py to js code" instead of "thanks for
+adding new repo"
+-you can delete the branch after you accept the pull request from selecting branch on the right main then theres gonna be a trashcan logo 
+to delete
+>merge conflict part :
+-you can make a few pull requests at the same time
+-if branch one and two have conflic then you can delete the one you dont want
