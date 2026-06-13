@@ -1,0 +1,21 @@
+fork (folk *crying emoji*)
+forking = 
+-proses copy/duplikasi sebuah repository punya orang lain, tidak hanya reponya saja tapi historynya 
+juga tercopy/duplikasi
+-bisa juga di bilang jembatan antara repo original dan duplikatnya dengan begitu kita sendiri dapat memodifikasi repo
+originalnya untuk kita gunakan pada projek kita sendiri
+-kita bisa juga berkontribusi kepada repo orang lain, seperti fork reponya > modifikasi > usulkan
+-fork beda dengan konsep "clone" / fork !=(tidak sama dengan) clone
+
+cara melakukan fork =
+-cari akun/repo yang ingin di fork lalu ada 2 cara berbeda untuk forknya :
+ >bisa dengan langsung mengedit filenya lalu langsung ada tulisan "fork this project & edit the file"
+ >cara kedua yaitu bisa langsung fork kalau kita ke main menu repo yang ingin di fork, di kanan atas ada tombol "Fork"
+  nanti langsung tercopy dan menjadi "nama-akunmu/reponya" dan di bawahnya ada tulisan "forked from 'nama-akun-yang-difork/reponya'
+ >bisa juga reponya di download, apabila click "clone or download" nanti source codenya akan di download secara lokal ke
+  komputer dalam bentuk zip apabila mengeclick yang zip (tidak ada kredit forknya dari mana)
+
+cara kontribusi setelah mengubah fork =
+-di bawah "add file" ada tulisan cotribute
+-lalu sisanya sama seperti ketika ingin melakukan merge antar 2 branch kemaren, tinggal menunggu setelah itu diterima atau tidak
+ oleh pemilik si repositorynya
