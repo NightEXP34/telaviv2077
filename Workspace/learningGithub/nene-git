@@ -1,0 +1,18 @@
+GIT
+command-command git =
+git = seperti help di discord kurang lebih wkwk
+clear = buat ngeclear commandsnya
+git --version = buat ngecheck version git (versi berapa, sistem operasi berapa)
+git status = ngecek udah ngelakuin commit atau belom
+git commit -m "message you wanna put"
+
+3 area repo git
+working tree = folder tempat kalian bekerjanya
+staging area = ngasih tau git bahwa sudah melakukan perubahan
+history
+
+staging area & history akan masuk ke area bernama .git
+git add = memindahkan fil ke staging area dari working tree
+git commit = dari staging area ke history
+
+stop at 24:43 for now, not feeling good on my stomach
