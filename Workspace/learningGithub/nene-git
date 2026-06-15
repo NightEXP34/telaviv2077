@@ -5,14 +5,23 @@ clear = buat ngeclear commandsnya
 git --version = buat ngecheck version git (versi berapa, sistem operasi berapa)
 git status = ngecek udah ngelakuin commit atau belom
 git commit -m "message you wanna put"
+git add = memindahkan fil ke staging area dari working tree
+git commit = dari staging area ke history
+git rm --cached <file> = buat remove file git dari repo
+cd desktop = cd singkatan dari "change directory" yang berarti ini mengganti directory ke file desktop
+pwd = mengecek lagi di mana seperti contoh setelah saya melakukan command cd desktop berarti saya ada 
+di "/c/Users/afmuz/desktop"
+ls = untuk mengetahui di sebuah file directory ada apa aja
+git log = untuk melihat commit apa saja yang sudah dilakukan
+git log -<angka> = contoh kalo git log -3 berarti 3 command terakhir yang kamu lakukan
+git log -- <nama file> = buat ngecek spesifik apa aja yang udah berubah sama filenya
+git checkout <5 hash angka terdepan dari git log> -- <nama file dari hash>
 
 3 area repo git
 working tree = folder tempat kalian bekerjanya
 staging area = ngasih tau git bahwa sudah melakukan perubahan
-history
+history = history
 
 staging area & history akan masuk ke area bernama .git
-git add = memindahkan fil ke staging area dari working tree
-git commit = dari staging area ke history
 
-stop at 24:43 for now, not feeling good on my stomach
+
