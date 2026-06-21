@@ -1,0 +1,63 @@
+// Pindah halaman
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class pinda_halaman : MonoBehaviour
+{
+    public void Pindah()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void LoadNextScene()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene + 1);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+}
+
+// Loading Screen
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+using System.Collections;
+
+public class LoadingScene : MonoBehaviour
+{
+    public GameObject pressSpaceText;
+    private bool canContinue = false;
+
+    void Start()
+    {
+        Time.timeScale = 1f; // Mengembalikan game ke normal
+        pressSpaceText.SetActive(false);
+        StartCoroutine(LoadingProcess());
+    }
+
+    void Update()
+    {
+        if (canContinue && Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            LoadNextScene();
+        }
+    }
+
+    IEnumerator LoadingProcess()
+    {
+        yield return new WaitForSeconds(2f);
+
+        canContinue = true;
+        pressSpaceText.SetActive(true);
+    }
+
+    void LoadNextScene()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene + 1);
+    }
+}
