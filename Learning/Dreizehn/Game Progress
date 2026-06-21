@@ -1,0 +1,34 @@
+// Movement code
+using UnityEngine;
+
+public class Movement : MonoBehaviour
+{
+    public float speed = 5f; // Speed of the player movement
+    public int facingDiration = 1; // Direction the player is facing (1 for right, -1 for left)
+
+    public Rigidbody2D rb; // Reference to the Rigidbody2D component
+    public Animator animator; // Reference to the Animator component
+
+    // Update is called once per frame
+    void Update()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal"); // Get horizontal input (A/D or Left/Right arrow keys)
+        float verticalInput = Input.GetAxis("Vertical"); // Get vertical input (W/S or Up/Down arrow keys)
+
+        if(horizontalInput > 0 && transform.localScale.x < 0 || horizontalInput < 0 && transform.localScale.x > 0)
+        {
+            flip();
+        }
+
+        animator.SetFloat("Horizontal", Mathf.Abs(horizontalInput)); // Set the "Horizontal" parameter in the Animator
+        animator.SetFloat("Vertical", Mathf.Abs(verticalInput)); // Set the "Vertical" parameter in the Animator
+
+        rb.linearVelocity = new Vector2(horizontalInput * speed, verticalInput * speed); // Set the velocity of the Rigidbody2D based on input and speed
+    }
+
+    void flip()
+    {
+        facingDiration *= -1; // Reverse the facing direction
+        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z); // Flip the player's scale to face the opposite direction
+    }
+}
